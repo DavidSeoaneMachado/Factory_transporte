@@ -18,9 +18,9 @@ public class Camion implements Transporte {
     }
 
     @Override
-    public int tipoEmbalaje(Float x, Float y, Float z, Float peso) {
+    public int tipoEmbalaje(Float x, Float y, Float z, Float peso) { //En este caso utilizo solo el peso para determinar el embalaje
 
-        int embalaje = 0;
+        int embalaje = palet;
 
         if (peso <= palet) {
             System.out.println("Tu embalaje es un palet");
@@ -28,11 +28,11 @@ public class Camion implements Transporte {
         }
         if (peso > palet && peso <= envoltorio_carton) {
             System.out.println("Tu embalaje es un carton");
-            embalaje = 2;
+            embalaje = envoltorio_carton;
         }
         if (peso > envoltorio_carton && peso <= caja_madera) {
             System.out.println("Tu embalaje es un madero");
-            embalaje = 3;
+            embalaje = caja_madera;
         }
 
         return embalaje;

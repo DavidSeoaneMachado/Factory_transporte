@@ -1,4 +1,10 @@
 public class Main {
+    /**
+     * Proyecto del patron Factory
+     *
+     * @author David Seoane
+     * @version 0.2
+     */
     static Transporte salida;
     public static void main(String[] args) {
 
