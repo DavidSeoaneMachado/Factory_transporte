@@ -15,6 +15,11 @@ public class Main {
         salida = Factoria.getProducto(Factoria.CAMION);
         salida.coste_total(70000);
         salida.tipoEmbalaje(4F, 4.2F, 4.18F, 1.6F);
+
+        //Ejemplo de como se utilizaria para generar un Barco de transporte//
+        salida = Factoria.getProducto(Factoria.BARCO);
+        salida.coste_total(36206);
+        salida.tipoEmbalaje(9F, 4.2F, 4.18F, 14F);
     }
 
 
